@@ -1,0 +1,185 @@
+object frmmain: Tfrmmain
+  Left = 689
+  Height = 396
+  Top = 238
+  Width = 629
+  Caption = 'App Launcher'
+  ClientHeight = 366
+  ClientWidth = 629
+  DesignTimePPI = 144
+  KeyPreview = True
+  Menu = mnuMain
+  OnCreate = FormCreate
+  LCLVersion = '2.2.4.0'
+  object PageCtrl: TPageControl
+    Left = 8
+    Height = 328
+    Top = 0
+    Width = 616
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabOrder = 0
+    OnChange = PageCtrlChange
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 36
+    Top = 330
+    Width = 629
+    Panels = <>
+  end
+  object ImageList1: TImageList
+    Height = 48
+    Width = 48
+    Left = 136
+    Top = 48
+  end
+  object LstMenu: TPopupMenu
+    OnPopup = LstMenuPopup
+    Left = 232
+    Top = 48
+    object mnuAppRun: TMenuItem
+      Caption = 'Run'
+      Default = True
+      OnClick = mnuAppRunClick
+    end
+    object mnuAppRunAll: TMenuItem
+      Caption = 'Run All'
+      OnClick = mnuAppRunAllClick
+    end
+    object mnuAppOpenPath: TMenuItem
+      Caption = 'Open Path'
+      OnClick = mnuAppOpenPathClick
+    end
+    object mnuAppRefresh: TMenuItem
+      Caption = 'Refresh'
+      OnClick = mnuAppRefreshClick
+    end
+    object Separator1: TMenuItem
+      Caption = '-'
+    end
+    object mnuAppAdd: TMenuItem
+      Caption = 'Add'
+      OnClick = mnuAppAddClick
+    end
+    object mnuAppEdit: TMenuItem
+      Caption = 'Edit'
+      OnClick = mnuAppEditClick
+    end
+    object mnuAppRemove: TMenuItem
+      Caption = 'Remove'
+      OnClick = mnuAppRemoveClick
+    end
+    object mnuAppRemoveAll: TMenuItem
+      Caption = 'Remove All'
+      OnClick = mnuAppRemoveAllClick
+    end
+    object Separator2: TMenuItem
+      Caption = '-'
+    end
+    object mnuAppMoveTo: TMenuItem
+      Caption = 'Move To'
+      OnClick = mnuAppMoveToClick
+    end
+  end
+  object mnuMain: TMainMenu
+    Left = 48
+    Top = 48
+    object mnuFile: TMenuItem
+      Caption = 'File'
+      object mnuBackup: TMenuItem
+        Caption = 'Backup'
+        OnClick = mnuBackupClick
+      end
+      object mnuRestore: TMenuItem
+        Caption = 'Restore'
+        OnClick = mnuRestoreClick
+      end
+      object Separator6: TMenuItem
+        Caption = '-'
+      end
+      object mnuExit: TMenuItem
+        Caption = 'Exit'
+        OnClick = mnuExitClick
+      end
+    end
+    object mnuGroup: TMenuItem
+      Caption = 'Groups'
+      object mnuGAdd: TMenuItem
+        Caption = 'Add'
+        OnClick = mnuGAddClick
+      end
+      object mnuGRename: TMenuItem
+        Caption = 'Rename'
+        OnClick = mnuGRenameClick
+      end
+      object mnuGRemove: TMenuItem
+        Caption = 'Remove'
+        OnClick = mnuGRemoveClick
+      end
+      object Separator5: TMenuItem
+        Caption = '-'
+      end
+      object mnuExportGrp: TMenuItem
+        Caption = 'Export'
+        OnClick = mnuExportGrpClick
+      end
+      object mnuImportGrp: TMenuItem
+        Caption = 'Import'
+        OnClick = mnuImportGrpClick
+      end
+    end
+    object mnuApps: TMenuItem
+      Caption = 'Appliactions'
+      OnClick = mnuAppsClick
+      object mnuRunApp: TMenuItem
+        Caption = 'Run'
+        OnClick = mnuRunAppClick
+      end
+      object mnuRunAllApps: TMenuItem
+        Caption = 'Run All'
+        OnClick = mnuRunAllAppsClick
+      end
+      object mnuOpenAppPath: TMenuItem
+        Caption = 'Open Path'
+        OnClick = mnuOpenAppPathClick
+      end
+      object mnuRefreshApps: TMenuItem
+        Caption = 'Refresh'
+        OnClick = mnuRefreshAppsClick
+      end
+      object Separator4: TMenuItem
+        Caption = '-'
+      end
+      object mnuAppAdd1: TMenuItem
+        Caption = 'Add'
+        OnClick = mnuAppAdd1Click
+      end
+      object mnuAppEdit1: TMenuItem
+        Caption = 'Edit'
+        OnClick = mnuAppEdit1Click
+      end
+      object mnuAddRem1: TMenuItem
+        Caption = 'Remove'
+        OnClick = mnuAddRem1Click
+      end
+      object mnuRemoveAppApps: TMenuItem
+        Caption = 'Remove All'
+        OnClick = mnuRemoveAppAppsClick
+      end
+      object Separator3: TMenuItem
+        Caption = '-'
+      end
+      object mnuAppMoveTo1: TMenuItem
+        Caption = 'Move To'
+        OnClick = mnuAppMoveTo1Click
+      end
+    end
+    object mnuHelp: TMenuItem
+      Caption = 'Help'
+      object mnuAbout: TMenuItem
+        Caption = 'About'
+        OnClick = mnuAboutClick
+      end
+    end
+  end
+end

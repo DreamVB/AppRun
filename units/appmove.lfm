@@ -1,0 +1,49 @@
+object frmMoveTo: TfrmMoveTo
+  Left = 1232
+  Height = 149
+  Top = 359
+  Width = 330
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'MoveTo'
+  ClientHeight = 149
+  ClientWidth = 330
+  DesignTimePPI = 144
+  Position = poMainFormCenter
+  LCLVersion = '2.2.4.0'
+  object cboGroups: TComboBox
+    Left = 32
+    Height = 33
+    Top = 41
+    Width = 262
+    ItemHeight = 25
+    Style = csDropDownList
+    TabOrder = 0
+  end
+  object lblGroups: TLabel
+    Left = 32
+    Height = 25
+    Top = 12
+    Width = 58
+    Caption = 'Groups'
+    ParentColor = False
+  end
+  object cmdOK: TButton
+    Left = 32
+    Height = 38
+    Top = 89
+    Width = 72
+    Caption = 'OK'
+    OnClick = cmdOKClick
+    TabOrder = 1
+  end
+  object cmdCancel: TButton
+    Left = 112
+    Height = 38
+    Top = 89
+    Width = 81
+    Caption = 'Cancel'
+    OnClick = cmdCancelClick
+    TabOrder = 2
+  end
+end

@@ -1,0 +1,90 @@
+object frmAddApp: TfrmAddApp
+  Left = 585
+  Height = 309
+  Top = 314
+  Width = 544
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Add'
+  ClientHeight = 309
+  ClientWidth = 544
+  DesignTimePPI = 144
+  OnCreate = FormCreate
+  Position = poDesktopCenter
+  LCLVersion = '2.2.4.0'
+  object lblCaption: TLabeledEdit
+    Left = 16
+    Height = 33
+    Top = 40
+    Width = 488
+    EditLabel.Height = 25
+    EditLabel.Width = 488
+    EditLabel.Caption = 'Caption'
+    EditLabel.ParentColor = False
+    TabOrder = 0
+    OnChange = lblCaptionChange
+    OnKeyPress = lblCaptionKeyPress
+  end
+  object txtFilename: TFileNameEdit
+    Left = 16
+    Height = 33
+    Top = 192
+    Width = 504
+    FilterIndex = 0
+    HideDirectories = False
+    ButtonWidth = 34
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 2
+    OnKeyPress = txtFilenameKeyPress
+  end
+  object Label1: TLabel
+    Left = 16
+    Height = 25
+    Top = 160
+    Width = 83
+    Caption = 'Executable'
+    ParentColor = False
+  end
+  object cmdOK: TButton
+    Left = 24
+    Height = 38
+    Top = 240
+    Width = 113
+    Caption = 'OK'
+    Enabled = False
+    OnClick = cmdOKClick
+    TabOrder = 3
+  end
+  object cmdClose: TButton
+    Left = 152
+    Height = 38
+    Top = 240
+    Width = 113
+    Caption = 'Close'
+    OnClick = cmdCloseClick
+    TabOrder = 4
+  end
+  object lblBitmap: TLabel
+    Left = 16
+    Height = 25
+    Top = 88
+    Width = 34
+    Caption = 'Icon'
+    ParentColor = False
+  end
+  object txtBitmap: TFileNameEdit
+    Left = 16
+    Height = 33
+    Top = 120
+    Width = 504
+    Filter = 'Bitmap Files(*.bmp)|*.bmp'
+    FilterIndex = 0
+    HideDirectories = False
+    ButtonWidth = 34
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 1
+    OnKeyPress = txtFilenameKeyPress
+  end
+end
